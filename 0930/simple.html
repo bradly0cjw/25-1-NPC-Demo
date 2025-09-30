@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Elements Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+<!-- Document Structure Elements -->
+<div class="section">
+    <h2>Document Structure Elements</h2>
+    <header>
+        <h1>Page Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="content">
+            <article>
+                <h2>Article Title</h2>
+                <p>This is the main content area.</p>
+            </article>
+        </section>
+        
+        <aside>
+            <h3>Sidebar Content</h3>
+            <p>This is sidebar content.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 HTML Demo Page</p>
+    </footer>
+</div>
+
+<!-- Text Content Elements -->
+<div class="section">
+    <h2>Text Content Elements</h2>
+    
+    <!-- Headings -->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    
+    <!-- Paragraphs and Text -->
+    <p>This is a paragraph with some text content.</p>
+    <p>This paragraph contains <strong>bold text</strong>, <em>italic text</em>, 
+       <mark>highlighted text</mark>, <small>small text</small>, 
+       <sub>subscript</sub>, <sup>superscript</sup>, 
+       <del>deleted text</del>, and <ins>inserted text</ins>.</p>
+    
+    <!-- Preformatted Text -->
+    <pre>
+    This is preformatted text
+    that preserves    spaces
+    and line breaks.
+    </pre>
+    
+    <!-- Code -->
+    <p>Here's some inline <code>console.log("Hello World")</code> code.</p>
+    <pre><code>
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+    </code></pre>
+    
+    <!-- Blockquote -->
+    <blockquote cite="https://example.com">
+        <p>This is a blockquote from an external source.</p>
+        <footer>— <cite>Author Name</cite></footer>
+    </blockquote>
+    
+    <!-- Abbreviation -->
+    <p><abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language.</p>
+    
+    <!-- Definition -->
+    <p><dfn>HTML</dfn> is a markup language for creating web pages.</p>
+    
+    <!-- Time -->
+    <p>Published on <time datetime="2025-09-30">September 30, 2025</time></p>
+    
+    <!-- Keyboard and Sample -->
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+    <p>The output will be: <samp>Hello, World!</samp></p>
+    
+    <!-- Variable -->
+    <p>The equation is <var>x</var> = <var>y</var> + 2</p>
+</div>
+
+<!-- Lists -->
+<div class="section">
+    <h2>Lists</h2>
+    
+    <!-- Unordered List -->
+    <h3>Unordered List</h3>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item
+            <ul>
+                <li>Nested item 1</li>
+                <li>Nested item 2</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <!-- Ordered List -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+    </ol>
+    
+    <!-- Description List -->
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>Programming language for web development</dd>
+    </dl>
+</div>
+
+<!-- Links and Media -->
+<div class="section">
+    <h2>Links and Media</h2>
+    
+    <!-- Links -->
+    <p><a href="https://www.example.com" target="_blank">External link</a></p>
+    <p><a href="mailto:example@email.com">Email link</a></p>
+    <p><a href="tel:+1234567890">Phone link</a></p>
+    <p><a href="#top">Internal link</a></p>
+    
+    <!-- Images -->
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100' height='100' fill='%23ddd'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em'%3EImage%3C/text%3E%3C/svg%3E" alt="Placeholder image" width="100" height="100">
+    
+    <!-- Figure with Caption -->
+    <figure>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='200' height='150' fill='%23eee'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em'%3EFigure%3C/text%3E%3C/svg%3E" alt="Figure example" width="200" height="150">
+        <figcaption>This is a figure caption</figcaption>
+    </figure>
+    
+    <!-- Audio -->
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Video -->
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- Tables -->
+<div class="section">
+    <h2>Tables</h2>
+    <table>
+        <caption>Sample Data Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total: 2 people</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+<!-- Forms -->
+<div class="section">
+    <h2>Forms</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <!-- Text Inputs -->
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </p>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </p>
+            
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+            
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </p>
+            
+            <p>
+                <label for="website">Website:</label>
+                <input type="url" id="website" name="website">
+            </p>
+            
+            <p>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </p>
+            
+            <p>
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate">
+            </p>
+            
+            <p>
+                <label for="appointment">Appointment Time:</label>
+                <input type="datetime-local" id="appointment" name="appointment">
+            </p>
+            
+            <p>
+                <label for="volume">Volume:</label>
+                <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+            </p>
+            
+            <p>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color" value="#ff0000">
+            </p>
+            
+            <!-- File Input -->
+            <p>
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" multiple>
+            </p>
+            
+            <!-- Textarea -->
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message"></textarea>
+            </p>
+            
+            <!-- Select -->
+            <p>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select a country</option>
+                    <optgroup label="North America">
+                        <option value="us">United States</option>
+                        <option value="ca">Canada</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="uk">United Kingdom</option>
+                        <option value="de">Germany</option>
+                    </optgroup>
+                </select>
+            </p>
+            
+            <!-- Datalist -->
+            <p>
+                <label for="browser">Browser:</label>
+                <input list="browsers" id="browser" name="browser">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Safari">
+                    <option value="Edge">
+                </datalist>
+            </p>
+            
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </fieldset>
+            
+            <!-- Checkboxes -->
+            <fieldset>
+                <legend>Interests:</legend>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label><br>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label><br>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+            </fieldset>
+            
+            <!-- Buttons -->
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                <button type="button">Custom Button</button>
+            </p>
+        </fieldset>
+    </form>
+</div>
+
+<!-- Interactive Elements -->
+<div class="section">
+    <h2>Interactive Elements</h2>
+    
+    <!-- Details and Summary -->
+    <details>
+        <summary>Click to expand</summary>
+        <p>This content is hidden by default and can be toggled by clicking the summary.</p>
+    </details>
+    
+    <!-- Dialog (Modal) -->
+    <dialog id="myDialog">
+        <p>This is a dialog box!</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+    <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+</div>
+
+<!-- Embedded Content -->
+<div class="section">
+    <h2>Embedded Content</h2>
+    
+    <!-- Iframe -->
+    <iframe src="https://www.example.com" width="300" height="200" title="Example iframe">
+        Your browser does not support iframes.
+    </iframe>
+    
+    <!-- Object -->
+    <object data="document.pdf" type="application/pdf" width="300" height="200">
+        <p>PDF cannot be displayed. <a href="document.pdf">Download PDF</a></p>
+    </object>
+    
+    <!-- Embed -->
+    <embed src="animation.swf" type="application/x-shockwave-flash" width="300" height="200">
+</div>
+
+<!-- Scripting -->
+<div class="section">
+    <h2>Scripting Elements</h2>
+    
+    <!-- Canvas -->
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+        Your browser does not support the canvas element.
+    </canvas>
+    
+    <!-- SVG -->
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    
+    <!-- MathML (if supported) -->
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow>
+            <mi>x</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mrow>
+                    <mo>-</mo>
+                    <mi>b</mi>
+                    <mo>±</mo>
+                    <msqrt>
+                        <mrow>
+                            <msup>
+                                <mi>b</mi>
+                                <mn>2</mn>
+                            </msup>
+                            <mo>-</mo>
+                            <mn>4</mn>
+                            <mi>a</mi>
+                            <mi>c</mi>
+                        </mrow>
+                    </msqrt>
+                </mrow>
+                <mrow>
+                    <mn>2</mn>
+                    <mi>a</mi>
+                </mrow>
+            </mfrac>
+        </mrow>
+    </math>
+</div>
+
+<!-- Progress and Meter -->
+<div class="section">
+    <h2>Progress and Meter Elements</h2>
+    
+    <p>Progress: <progress value="70" max="100">70%</progress></p>
+    <p>Meter: <meter value="0.7" min="0" max="1">70%</meter></p>
+    <p>Disk usage: <meter value="0.6" optimum="0.5" high="0.9" low="0.1">60%</meter></p>
+</div>
+
+<!-- Line Breaks and Separators -->
+<div class="section">
+    <h2>Line Breaks and Separators</h2>
+    
+    <p>This line has a<br>line break in it.</p>
+    <p>This line has a word break oppor<wbr>tunity in it.</p>
+    
+    <hr>
+    
+    <p>Content after horizontal rule.</p>
+</div>
+
+<!-- Generic Elements -->
+<div class="section">
+    <h2>Generic Elements</h2>
+    
+    <div>This is a div (block-level container)</div>
+    <span>This is a span (inline container)</span>
+</div>
+
+<!-- Script Section -->
+<script>
+    // Simple JavaScript to make the canvas interactive
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(10, 10, 50, 50);
+    ctx.fillStyle = 'red';
+    ctx.fillRect(30, 30, 50, 50);
+</script>
+
+</body>
+</html>
