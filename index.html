@@ -1,10 +1,148 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-1 NPC Demo Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d838b 0%, #3da370 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .links-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .link-card {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border-color: #77ccb7;
+        }
+
+        .link-card h3 {
+            margin-bottom: 10px;
+            color: #13898d;
+            font-size: 1.2rem;
+        }
+
+        .link-card p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .github-link {
+            background: linear-gradient(135deg, #24292e 0%, #40434a 100%);
+            color: white !important;
+        }
+
+        .github-link h3 {
+            color: white !important;
+        }
+
+        .github-link p {
+            color: #ccc !important;
+        }
+
+        .github-link:hover {
+            border-color: #24292e;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .links-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <a href="./0930/index.html">Demo</a>
-    <a href="./0930/wocss.html">Demo (無 CSS)</a>
-    <a href="./0930/worwd.html">Demo (無 RWD)</a>
-    <a href="./0930/simple.html">Html 基本語法</a>
-    <a href="https://github.com/bradly0cjw/25-1-NPC-Demo">GitHub Repo</a>
+    <div class="container">
+        <h1>NPC 250930</h1>
+        <p class="subtitle">探索各種網頁開發示範作品</p>
+        
+        <div class="links-grid">
+            <a href="./0930/index.html" class="link-card">
+                <h3>完整示範</h3>
+                <p>具備完整功能的響應式網頁，包含 CSS 樣式設計和響應式布局</p>
+            </a>
+            
+            <a href="./0930/wocss.html" class="link-card">
+                <h3> Demo (無 CSS)</h3>
+                <p>基本的 HTML 結構，沒有任何 CSS 樣式，展示原始內容</p>
+            </a>
+            
+            <a href="./0930/worwd.html" class="link-card">
+                <h3> Demo (無 RWD)</h3>
+                <p>有樣式設計但沒有響應式網頁設計功能的頁面</p>
+            </a>
+            
+            <a href="./0930/simple.html" class="link-card">
+                <h3> HTML 基本語法</h3>
+                <p>完整收錄基本 HTML 元素和語法範例的綜合教學</p>
+            </a>
+            
+            <a href="https://github.com/bradly0cjw/25-1-NPC-Demo" class="link-card github-link" target="_blank">
+                <h3>GitHub 程式碼庫</h3>
+                <p>查看原始程式碼並在 GitHub 上參與此專案的開發</p>
+            </a>
+        </div>
+    </div>
 </body>
